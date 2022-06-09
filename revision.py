@@ -102,9 +102,78 @@ def shuffle(color):
 
 print(["white", "black", "yellow", "blue", "red", "green"])
 
+from cgitb import text
+from pickletools import string1
 from random import shuffle
+from re import L
+from unicodedata import name
 color = ["white", "black", "yellow", "blue", "red", "green"]
 shuffle(color)
 print(color)
 
+# Write a Python program to find the list of words that are longer than n from a given list of words.
+def longest(n, str):
+    word_len = []
+    txt = str.split(" ")
+    for x in txt:
+        if len(x) > n:
+            word_len.append(x)
+            return word_len
+print(longest(5, "This is the ever best day that has ever happened to me in my entire life. Trusting the process"))
 
+# Write a Python program to generate and print a list of first and last 5 elements where the values are square of numbers between 1 and 30 (both included).
+def values():
+    l = list()
+    for i in range(1, 21):
+        l.append(i**2)
+        print(l[:5])
+        print(l[-5:])
+print (values())
+
+list1 = [1, 3, 5, 7, 9]
+list2=[1, 2, 4, 6, 7, 8]
+diff_list1_list2 = list(set(list1) - set(list2))
+diff_list2_list1 = list(set(list2) - set(list1))
+total_diff = diff_list1_list2 + diff_list2_list1
+print(total_diff)
+# Write a Python program to convert a list of characters into a string.
+b = ["a", "b", "c", "d", "e"]
+string1 = "".join(b)
+print(string1)
+
+# Write a Python program to find the index of an item in a specified list.
+num = [10,20,30,40,50,-26]
+print(num.index(-26))
+
+# Write a Python program to flatten a shallow list.
+import itertools
+origin_list = [[2,3,6], [1,4,7,8], [16], [12,14,17,19]]
+new_list = list(itertools.chain(*origin_list))
+print(new_list)
+
+# Write a Python program to append a list to the second list.
+lista = [34,45,67,89,90]
+listb = ["Mary", "Waceke", "Maimbo", "Dylan", "Tamara"]
+new_list =lista + listb
+print(new_list)
+
+# Write a Python program to append a list to the second list.
+listx = ["Mary", "Waceke", "Maimbo", "Dylan", "Tamara"]
+print(listx[2])
+
+import random
+listx = ["Mary", "Waceke", "Maimbo", "Dylan", "Tamara"]
+print(random.choice(listx))
+
+x = range(1,11)
+for n in x:
+    sum = n +(n-1)
+    print(f"current figure is {n}, and the previous figure is {n-1}, and the sum is {sum}")
+
+    # write a python program that prints the least number in a list without using any python inbuilt function
+    list = [30,24,90,60,45,67,89]
+    smallest = 0
+    for x in list:
+        if x < smallest:
+            smallest = x
+print (smallest)
