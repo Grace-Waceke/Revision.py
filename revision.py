@@ -104,6 +104,8 @@ print(["white", "black", "yellow", "blue", "red", "green"])
 
 
 from random import shuffle
+from typing import Tuple
+from unittest import result
 color = ["white", "black", "yellow", "blue", "red", "green"]
 shuffle(color)
 print(color)
@@ -259,6 +261,86 @@ print(person1)
 print(person2)
 print("merge dictionaries")
 print(merge_dictionaries  (person1, person2))
+
+# Write a Python program to create a tuple.
+#Create an empty tuple with tuple() function built-in Python
+x = ()
+print(x)
+tuples = tuple()
+print(tuples)
+
+# Write a Python program to create a tuple with different data types.
+tuple = ("Grace", 23, 12.5, True,)
+print(tuple)
+
+# Write a Python program to create a tuple with numbers and print one item.
+tuple =(1,2,3,4,5,6,7,)
+print(tuple)
+tuple = 6
+print(tuple) 
+
+# Write a Python program to convert a tuple to a string.
+tup = ("p", "y", "t", "h", "o", "n", "c", "l", "a", "s", "s")
+string = "".join(tup)
+print(string)
+
+# Write a Python program to get the 4th element and 4th element from last of a tuple.
+tuple = ("w", 13, "a", "e", "c", "k", "d", "s", "t", "m")
+print(tuple)
+num = tuple[3]
+print(num)
+num2 = tuple[-4]
+print(num2)
+
+# Write a Python program to find the repeated items of a tuple.
+tuple = 1,2,3,4,3,5,6,7,8,9,10,5
+print(tuple)
+count = tuple.count(5)
+print(count)
+
+# Write a Python program to check whether an element exists within a tuple.
+tuple = ("w", 13, "a", "e", "c", "k", "d", "s", "t", "m")
+print("s" in tuple)
+print(20 in tuple)
+
+# Write a Python program to convert a list to a tuple.
+# lista = [1,2,3,4,5,6,7]
+# print(lista)
+# tuplex = tuple(lista)
+# print(tuplex)
+
+# Write a Python program to remove an item from a tuple.
+
+
+# 1.Write a Python script to print a dictionary where the keys are numbers between 1 and 15 (both included) and the values are square of keys.
+x1 = dict()
+for x in range(1, 16):
+    x1[x] = x**2
+    print(x1)
+
+# Write a Python program to convert more than one list to nested dictionary.
+def nested_dictionary(list1, list2, list3):
+    answer = [{a: {b: c}} for (a, b, c) in zip(list1, list2, list3)]
+    return answer
+
+student_id = ["A10", "B20", "C30", "C40"] 
+student_name = ["Grace Waceke", "Susan Mary", "Blessing Angel", "Reheme Nanda"] 
+student_age = [30, 18, 25, 100]
+print(student_id)
+print(student_name)
+print(student_age)
+print(nested_dictionary(student_id, student_name, student_age))
+
+# Write a Python program to change the position of every n-th value with the (n+1)th in a list.
+
+# Write a Python program to move all zero digits to end of a given list of numbers.
+def arrange(lst):
+    result = sorted(lst, key=lambda: not x)
+    return result
+
+num = [10,0,20,30,0,40,50,60,0,70,0,80,90,100,0,]
+print(arrange(num))
+
 
 
 
